@@ -19,6 +19,7 @@
                                 <th>Image</th>
                                 <th>Prefossion</th>
                                 <th>Description</th>
+                                <th>Settings</th>
 
                             </tr>
                         </thead>
@@ -30,13 +31,14 @@
                                     <td>@count</td>
                                     <td>@employerVM.Name</td>
                                     <td>@employerVM.Surname</td>
+                                    <td><img src="~/assets/img/team/@employerVM.Image" /></td>
                                     <td>@employerVM.Prefossion</td>
                                     <td>@employerVM.Description</td>
-                                    <td><img src="~/assets/img/team/@employerVM.Image" /></td>
+                                  
                                     <td>
-                                        <a asp-action="update" asp-route-id="@employerVM.Id" class="btn btn-warning"></a>
-                                        <a asp-action="delete" asp-route-id="@employerVM.Id" class=" btn btn-danger"></a>
-                                        <a asp-action="detail" asp-route-id="@employerVM.Id" class=" btn btn-primary"></a>
+                                        <a asp-action="update" asp-route-id="@employerVM.Id" class="btn btn-warning">Update</a>
+                                        <a asp-action="delete" asp-route-id="@employerVM.Id" class=" btn btn-danger">Delete</a>
+                                        <a asp-action="detail" asp-route-id="@employerVM.Id" class=" btn btn-primary">Detail</a>
                                     </td>
                                 </tr>
                             }

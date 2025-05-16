@@ -266,3 +266,4 @@ C:\Users\novbe2\Desktop\Anyar\Anyar\bin\Debug\net8.0\runtimes\win\lib\net7.0\Mic
 C:\Users\novbe2\Desktop\Anyar\Anyar\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\novbe2\Desktop\Anyar\Anyar\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\novbe2\Desktop\Anyar\Anyar\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\novbe2\Desktop\Anyar\Anyar\obj\Debug\net8.0\Anyar.sourcelink.json
