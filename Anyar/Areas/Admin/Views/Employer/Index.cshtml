@@ -1,0 +1,51 @@
+﻿
+@model List<GetEmployerVM>
+@{
+    int count = 0;
+}
+<div class="row">
+    <div class="col-md-12 stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <p class="card-title">EmployerTable</p>
+                <a asp-action="create" class=" btn btn-success">CREATED</a>
+                <div class="table-responsive">
+                    <table id="recent-purchases-listing" class="table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>Surname</th>
+                                <th>Image</th>
+                                <th>Prefossion</th>
+                                <th>Description</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (GetEmployerVM employerVM in Model)
+                            {
+                                count++;
+                                <tr>
+                                    <td>@count</td>
+                                    <td>@employerVM.Name</td>
+                                    <td>@employerVM.Surname</td>
+                                    <td>@employerVM.Prefossion</td>
+                                    <td>@employerVM.Description</td>
+                                    <td><img src="~/assets/img/team/@employerVM.Image" /></td>
+                                    <td>
+                                        <a asp-action="update" asp-route-id="@employerVM.Id" class="btn btn-warning"></a>
+                                        <a asp-action="delete" asp-route-id="@employerVM.Id" class=" btn btn-danger"></a>
+                                        <a asp-action="detail" asp-route-id="@employerVM.Id" class=" btn btn-primary"></a>
+                                    </td>
+                                </tr>
+                            }
+                        
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
